@@ -19,9 +19,7 @@ public class Worldz {
     
     public static MultiWorldSession session;
 
-    public Worldz() {
-        MinecraftForge.EVENT_BUS.register(this);
-        
+    public Worldz() {        
         try {
 			session = MultiWorldSession.loadSession();
 		} catch (FileNotFoundException e) {
